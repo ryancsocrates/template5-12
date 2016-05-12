@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace templateClassNamespace
 {
-    public class Class1
+    public class TemplateClass
     {
+        public string add_variable()
+        {
+            string result = "";
+            return result;
+        }
     }
 }
