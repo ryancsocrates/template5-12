@@ -5,7 +5,7 @@ using templateClassNamespace;
 namespace templateAppTest
 {
     [TestClass]
-    public class UnitTest1
+    public class TemplateAppTest
     {
         [TestMethod]
         public void can_add_variable_and_return_key_and_name()
@@ -17,16 +17,13 @@ namespace templateAppTest
 
             // result = string (var name)
 
-            //string var; // ${name}
-            //string var_value; // put in the var
-
             //string template = "Happy Birthday, ${name}";
-            string result;
+            
 
             TemplateClass tc = new TemplateClass();
-            result = tc.add_variable();
-            Assert.AreEqual(result, "");
-                        
+            string result = tc.add_var_and_var_value("age", "30");
+
+            Assert.AreEqual(result, "30");                    
         }
     }
 }
